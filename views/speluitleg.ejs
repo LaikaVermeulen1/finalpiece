@@ -1,0 +1,17 @@
+<%- include('header'); -%>
+<div class="detail spel<%=color%>">
+<article>
+<div class="spel spel<%=color%>">
+  <h3><%=post.titel %></h3>
+    <span><%=post.tags%></span>
+    <div class="rechts"><p><%=post.leeftijd %></p></div>
+
+</div>
+  <h4>benodigdheden:</h4>
+  <p><%=post.benodigdheden %></p>
+  <h4>speluitleg:</h4>
+  <p><%=post.speluitleg %></p>
+
+</article>
+  </div>
+<%- include('footer'); -%>

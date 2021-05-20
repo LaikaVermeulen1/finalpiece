@@ -1,0 +1,27 @@
+{
+  "activiteit": [{
+    "titel": "Pumkin game",
+    "leeftijd": "-10/-16",
+    "datum": "Zondag 1/11"
+  },{
+    "titel": "Fireball",
+    "leeftijd": "-16",
+    "datum": "zondag 8/11"
+  },{
+    "titel": "Kus de kikker",
+    "leeftijd": "-10/-16",
+    "datum": "zondag 15/11"
+  },{
+    "titel": "Escape room",
+    "leeftijd": "-16",
+    "datum": "Zondag 22/11"
+  },{
+    "titel": "Pisquiz",
+    "leeftijd": "-10/-16",
+    "datum": "Zondag 29/11"
+    },{
+      "titel": "Wie is er getikt?",
+      "leeftijd": "-16",
+      "datum": "Zondag 06/12"
+  }]
+}

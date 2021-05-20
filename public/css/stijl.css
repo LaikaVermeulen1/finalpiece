@@ -1,0 +1,400 @@
+body {
+background-color: white;
+font-family: helvetica;
+margin: auto 1.5rem;
+background-image: url(/images/header.png);
+background-position: top;
+background-repeat: no-repeat;
+background-size: contain;
+/*background-attachment:  fixed;*/
+padding-bottom: 2rem;
+}
+
+@font-face {
+  font-family: VAGround;
+  src: url(/fonts/VAGround.ttf);
+}
+
+@font-face {
+  font-family: VAGregular;
+  src: url(/fonts/VAGregular.ttf);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: VAGregular;
+  font-weight: bold;
+}
+
+h3, h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: #F08149;
+  text-align: center;
+}
+
+.home h4 {
+  font-size: 1.2rem;
+  padding-top: 0.6rem;
+}
+
+h5, h4 {
+  font-size: 1rem;
+}
+
+.navigatiebalk ul {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  margin-left: -1.5rem;
+  padding: 0;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  justify-content:  space-around;
+  bottom: 0;
+  background-color: white;
+  padding-top: 0.8rem;
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+.navigatiebalk li {
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.navigatiebalk li .active polyline {
+  stroke: #E6274A;
+}
+.navigatiebalk li .active path{
+  stroke: #E6274A;
+}
+
+.navigatiebalk li .activeblue polyline {
+  stroke: #2B75BB;
+}
+.navigatiebalk li .activeblue path {
+  fill: #2B75BB;
+}
+
+.navigatiebalk li .activeorange polygon {
+  stroke: #F08149;
+}
+
+.navigatiebalk li .activegreen {
+  stroke: #8DC046;
+}
+.navigatiebalk li .activegreen path {
+  fill: #8DC046;
+}
+
+.navigatiebalk svg{
+  height: 1.8rem;
+  width: auto;
+}
+
+.doorklik {
+ text-decoration: none;
+ color: white;
+}
+
+.favorietenstijl{
+  align-items: center;
+  text-align: center;
+}
+
+label, p, input[text], select {
+  font-size: 1rem;
+  font-family: helvetica;
+}
+
+.evaluatiespel.spelgreen label {
+  font-weight: 600;
+  color: #8DC046;
+}
+
+.evaluatiespel.spelblue label {
+  font-weight: 600;
+  color: #2B75BB;
+}
+
+.evaluatiespel.spelorange label {
+  font-weight: 600;
+  color: #F08149;
+}
+
+.evaluatiespel.spelred label {
+  font-weight: 600;
+  color: #E6274A;
+}
+
+.detail.spelgreen h4 {
+  font-weight: 600;
+  color: #8DC046;
+}
+
+.detail.spelblue h4 {
+  font-weight: 600;
+  color: #2B75BB;
+}
+
+.detail.spelorange h4 {
+  font-weight: 600;
+  color: #F08149;
+}
+
+.detail.spelred h4 {
+  font-weight: 600;
+  color: #E6274A;
+}
+
+.detail h4 {
+  color: #8DC046;
+}
+
+.favorietenstijl label {
+  font-weight: 600;
+  color: #F08149;
+}
+
+nav .hidden {
+  visibility: hidden;
+}
+
+button {
+  background-color: #E6274A;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  display: block;
+  color: white;
+  font-family: VAGregular;
+  font-size: 1rem;
+  margin: 3rem auto;
+}
+
+.bedankt, .bedanktfavorieten {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inlog h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  color: #8DC046;
+}
+
+.inlog label  {
+  font-weight: 600;
+  color: #2B75BB;
+}
+
+input[type=text], select {
+  margin: 0.2rem 0 2rem;
+}
+
+.inlog span {
+  font-size: 0.8rem;
+}
+
+input[type=text], textarea {
+  border: 0.01rem solid lightgrey;
+  border-radius: 0.25rem;
+}
+
+.evaluatieinvul input[type=text] {
+  width: 85vw;
+}
+
+.spel {
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  color: white;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.individueelspel {
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  color: white;
+  margin: 1rem auto;
+  background-color: #8DC046;
+  width: 85vw;
+}
+
+.leeftijd {
+  text-align: right;
+  margin-top: -1rem;
+}
+
+.spel:nth-child(4n),.spel.spelgreen {
+  background-color: #8DC046;
+}
+
+.spel:nth-child(4n-3), .spel.spelblue {
+  background-color: #2B75BB;
+}
+
+.spel:nth-child(4n-1), .spel.spelorange {
+  background-color: #F08149;
+}
+
+.spel:nth-child(4n-2), .spel.spelred {
+  background-color: #E6274A;
+}
+
+.spel.spelgreen {
+  background-color: #8DC046;
+}
+
+.spel.spelblue {
+  background-color: #2B75BB;
+}
+
+.spel.spelorange {
+  background-color: #F08149;
+}
+
+.spel.spelred {
+  background-color: #E6274A;
+}
+
+.rechts {
+  text-align: right;
+  margin-top: -2rem;
+  display: run-in;
+  font-size: 0.9rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+nav.home {
+  display: flex;
+  justify-content: center;
+}
+
+.favorieten, .activiteitevalueren, .spelletjes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #2B75BB;
+  border-radius: 0.5rem;
+  padding: 0 0 0.5rem 0.8rem;
+  color: white;
+}
+
+.favorieten {
+background-color: #F08149;
+}
+
+.spelletjes {
+background-color: #8DC046;
+}
+
+.evaluatiespel .smileys1, .evaluatiespel .smileys2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.4rem 0.8rem;
+
+}
+
+.evaluatiespel svg {
+  fill: lightgrey;
+  height: 3rem;
+  width: 3rem;
+  margin: 0.2rem;
+}
+
+.evaluatiespel .rating-form-2 svg {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+.evaluatiespel #radios label {
+  position: relative;
+}
+
+.evaluatiespel input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.evaluatiespel input + svg {
+  cursor: pointer;
+}
+
+.evaluatiespel input[class="super-happy"]:checked + svg {
+  fill: rgb(0, 204, 79);
+}
+
+.evaluatiespel input[class="super-happy2"]:checked + svg {
+  fill: rgb(0, 204, 79);
+}
+
+.evaluatiespel input[class="happy"]:checked + svg {
+  fill: rgb(0, 109, 217);
+}
+
+.evaluatiespel input[class="happy2"]:checked + svg {
+  fill: rgb(0, 109, 217);
+}
+
+.evaluatiespel input[class="neutral"]:checked + svg {
+  fill: rgb(232, 214, 0);
+}
+
+.evaluatiespel input[class="neutral2"]:checked + svg {
+  fill: rgb(232, 214, 0);
+}
+
+.evaluatiespel input[class="sad"]:checked + svg {
+  fill: rgb(229, 132, 0);
+}
+
+.evaluatiespel input[class="sad2"]:checked + svg {
+  fill: rgb(229, 132, 0);
+}
+
+.evaluatiespel input[class="super-sad"]:checked + svg {
+  fill: rgb(239, 42, 16);
+}
+
+.evaluatiespel input[class="super-sad2"]:checked + svg {
+  fill: rgb(239, 42, 16);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem 0.2rem;
+  background-color: white;
+  color: #E6274A;
+  border: 0.1rem solid #E6274A;
+  font-size: 0.9rem;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #E6274A;
+  color: white;
+}

@@ -1,0 +1,23 @@
+<%- include('header'); -%>
+
+<main>
+  <div class="button-group filters-button-group">
+    <button class="button is-checked" data-filter="*">Alles</button>
+    <button class="button" data-filter=".Buiten">Buiten</button>
+    <button class="button" data-filter=".Binnen">Binnen</button>
+    <button class="button" data-filter=".Rustig">Rustig</button>
+    <button class="button" data-filter=".Hevig">Hevig</button>
+  </div>
+
+    </main>
+
+<div class="spellen">
+  <% for (let i=0; i<posts.length; i++) { %>
+      <%- include('projectpost', {post: posts[i], index: i}); -%>
+  <% } // close forloop %>
+  </div>
+
+  <script src="/js/isotope.js"></script>
+  <script src="/js/script.js"></script>
+
+<%- include("footer"); -%>

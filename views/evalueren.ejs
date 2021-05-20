@@ -1,0 +1,9 @@
+<%- include("header"); -%>
+
+<div class="spellen">
+  <% for (let i=0; i<posts.length; i++) { %>
+      <%- include('activiteitpost', {post: posts[i], index: i}); -%>
+  <% } // close forloop %>
+</div>
+<script src="/js/script.js"></script>
+<%- include("footer"); -%>
