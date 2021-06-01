@@ -92,10 +92,10 @@ h5, h4 {
 }
 
 .navigatiebalk li .active polyline {
-  stroke: #E6274A;
+  stroke: #d9d025;
 }
 .navigatiebalk li .active path{
-  stroke: #E6274A;
+  stroke: #d9d025;
 }
 
 .navigatiebalk li .activeblue polyline {
