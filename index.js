@@ -22,7 +22,7 @@ app.get("/", function(request, response){
   response.render("start",{
     title: "",
     terug: "",
-    terugclass: "hidden"
+    terugclass: "hidden",
   });
 });
 
@@ -30,7 +30,8 @@ app.get("/inlog", function(request, response){
   response.render("inlog",{
     title: "",
     terug: "",
-    terugclass: "hidden"
+    terugclass: "hidden",
+    bodyclass: "header2"
   });
 });
 
@@ -38,7 +39,8 @@ app.get("/home", function(request, response){
     response.render("home",{
       title: "home",
       terug: "",
-      terugclass: "hidden"
+      terugclass: "hidden",
+      bodyclass: "header1"
     });
 });
 
@@ -48,7 +50,8 @@ app.get("/evalueren", function(request, response){
       title: "activiteiten evalueren",
       terug: "/home",
       posts: activiteitposts.activiteit,
-      terugclass: ""
+      terugclass: "",
+      bodyclass: "header2"
     });
 });
 
@@ -78,7 +81,8 @@ app.get("/evaluatiespel/:postid", function(request, response){
       terug: "/evalueren",
       post: activiteitposts.activiteit[request.params.postid],
       terugclass: "",
-      color: color
+      color: color,
+      bodyclass: "header3"
     });
 });
 
@@ -87,7 +91,8 @@ app.get("/bedankt", function(request, response){
     response.render("bedankt",{
       title: "bedankt",
       terug: "/evalueren",
-      terugclass: "hidden"
+      terugclass: "hidden",
+      bodyclass: "header4"
     });
 });
 
@@ -96,7 +101,8 @@ app.get("/bedanktfavorieten", function(request, response){
     response.render("bedanktfavorieten",{
       title: "bedankt",
       terug: "/home",
-      terugclass: "hidden"
+      terugclass: "hidden",
+      bodyclass: "header1"
     });
 });
 
@@ -104,7 +110,8 @@ app.get("/favorieten", function(request, response){
     response.render("favorieten",{
       title: "favoriete spelletjes",
       terug: "/home",
-      terugclass: ""
+      terugclass: "",
+      bodyclass: "header2"
     });
 });
 
@@ -113,7 +120,8 @@ app.get("/spelletjes", function(request, response){
       title: "spelletjes",
       terug: "/home",
       posts: projectposts.project,
-      terugclass: ""
+      terugclass: "",
+      bodyclass: "header3"
     });
 });
 
@@ -143,7 +151,8 @@ app.get("/speluitleg/:postid", function(request, response){
       terug: "/spelletjes",
       post: projectposts.project[request.params.postid],
       terugclass: "",
-      color: color
+      color: color,
+      bodyclass: "header4"
     });
 });
 
@@ -155,4 +164,6 @@ app.use(function(request, response){
 
 
 // server opstarten en beschikbaar maken via URL
-app.listen(2002);
+//app.listen(2002);
+app.set('port', (process.env.PORT || 2002));
+app.listen(app.get('port'), function() { });

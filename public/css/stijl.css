@@ -2,12 +2,36 @@ body {
 background-color: white;
 font-family: helvetica;
 margin: auto 1.5rem;
-background-image: url(/images/header.png);
-background-position: top;
-background-repeat: no-repeat;
-background-size: contain;
 /*background-attachment:  fixed;*/
 padding-bottom: 2rem;
+}
+
+.header1 {
+  background-image: url(/images/header1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header2 {
+  background-image: url(/images/header2.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header3 {
+  background-image: url(/images/header3.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header4 {
+  background-image: url(/images/header4.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @font-face {
@@ -23,6 +47,7 @@ padding-bottom: 2rem;
 h1, h2, h3, h4, h5 {
   font-family: VAGregular;
   font-weight: bold;
+  letter-spacing: 0.09rem;
 }
 
 h3, h4 {
@@ -36,7 +61,7 @@ h1 {
 }
 
 .home h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 0.6rem;
 }
 
@@ -197,7 +222,7 @@ a {
 }
 
 input[type=text], select {
-  margin: 0.2rem 0 2rem;
+  margin: 0.5rem 0 1.2rem;
 }
 
 .inlog span {
@@ -207,6 +232,7 @@ input[type=text], select {
 input[type=text], textarea {
   border: 0.01rem solid lightgrey;
   border-radius: 0.25rem;
+  margin: 0.5rem 0 1.2rem;
 }
 
 .evaluatieinvul input[type=text] {
@@ -227,7 +253,7 @@ input[type=text], textarea {
   color: white;
   margin: 1rem auto;
   background-color: #8DC046;
-  width: 85vw;
+  width: 84vw;
 }
 
 .leeftijd {
